@@ -12,6 +12,11 @@
 
 	    <a-scene embedded="" arjs="trackingMethod:best; debugUIEnabled:false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false">
 
+			<!-- 3Dモデルを読み込む -->
+			<a-assets>
+				<a-asset-item id="model" src="./asset/model.glb" scale="1 1 1"></a-asset-item>
+			</a-assets>
+
 			<a-marker type="pattern" url="./asset/pattern-Hiro.patt" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
 
 				<a-box position="0 0.8 0" wireframe="false" color="#843233" rotation="" scale="" visible="" material="" geometry="" src="" width="0.7" height="0.7" depth="0.7" >
@@ -19,6 +24,9 @@
 				</a-box>
 
 			</a-marker>
+
+
+
 
 		    <a-entity camera="" position="" rotation="" scale="" visible=""></a-entity>
 
