@@ -10,9 +10,9 @@
 	    <!-- AR.jsを読み込む -->
 	    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-	    <a-scene type="pattern" url="./asset/pattern-Hiro.patt" arjs="trackingMethod:best; debugUIEnabled:false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+	    <a-scene embedded="" arjs="trackingMethod:best; debugUIEnabled:false;" class="" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="enabled: false">
 
-			<a-marker preset="hiro" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
+			<a-marker type="pattern" url="./asset/pattern-Hiro.patt" position="" rotation="" scale="" visible="" material="" arjs-anchor="" arjs-hit-testing="">
 
 				<a-box position="0 0.8 0" wireframe="false" color="#843233" rotation="" scale="" visible="" material="" geometry="" src="" width="0.7" height="0.7" depth="0.7" >
 					<a-animation attribute="rotation" from="20 0 0" to="20 360 0" direction="alternate" dur="4000" repeat="indefinite" easing="ease"></a-animation>
